@@ -16,7 +16,6 @@ def sigmoid(x):
 
 def sigmoid_grad(x):
     return (1.0 - sigmoid(x)) * sigmoid(x)
-    
 
 
 def relu(x):
@@ -27,7 +26,6 @@ def relu_grad(x):
     grad = np.zeros_like(x)
     grad[x>=0] = 1
     return grad
-    
 
 
 def softmax(x):
